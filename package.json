@@ -7,12 +7,6 @@
 		"metacall-deploy": "dist/index.js"
 	},
 	"scripts": {
-		"test": "npm run --silent build && mocha dist/test",
-		"unit": "npm run --silent test -- --ignore **/integration**",
-		"prepublishOnly": "npm run --silent build",
-		"lint": "eslint . --ignore-pattern dist",
-		"fix": "eslint . --ignore-pattern dist --fix",
-		"build": "npm run --silent lint && tsc",
 		"start": "node dist/index.js"
 	},
 	"repository": {
